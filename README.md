@@ -8,8 +8,8 @@ An opinionated library of common functionality to bootstrap a VueJs based SPA ap
 
 ### Installation
 
-Include as a submodule namned 'library_vue_components' in the Vue application's source folder.
+Include as a submodule namned 'library_vue' in the Vue application's source folder.
 
 ```
-git submodule add https://github.com/thzero/library_client_vue_components "src/library_vue_components"
+git submodule add https://github.com/thzero/library_client_vue_components "src/library_vue"
 ```
