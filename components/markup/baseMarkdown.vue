@@ -3,7 +3,7 @@ import LibraryConstants from '@thzero/library_client/constants';
 
 import GlobalUtility from '@thzero/library_client/utility/global';
 
-import base from '@/library_vue/components/base';
+import base from '@/library_vue_components/components/base';
 
 export default {
 	name: 'baseMarkdown',
