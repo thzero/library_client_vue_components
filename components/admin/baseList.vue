@@ -5,7 +5,7 @@ import LibraryUtility from '@thzero/library_common/utility';
 import baseEdit from '../baseEdit';
 import VConfirmationDialog from '@/library_vue_vuetify/components/VConfirmationDialog';
 
-import DialogSupport from '@/library_vue_components/components/support/dialog';
+import DialogSupport from '@/library_vue/components/support/dialog';
 
 export default {
 	name: 'BaseAdminList',
