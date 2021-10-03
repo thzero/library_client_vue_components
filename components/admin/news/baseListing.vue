@@ -1,7 +1,7 @@
 <script>
 import GlobalUtility from '@thzero/library_client/utility/global';
 
-import baseList from '../baseList';
+import baseList from '../baseListing';
 
 import VMarkdown from '@/library_vue_vuetify/components/markup/VMarkdown';
 

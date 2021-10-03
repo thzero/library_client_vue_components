@@ -1,11 +1,11 @@
 <script>
 import GlobalUtility from '@thzero/library_client/utility/global';
 
-import baseList from '../baseList';
+import baseListing from '../baseListing';
 
 export default {
 	name: 'BaseAdminUsersListing',
-	extends: baseList,
+	extends: baseListing,
 	computed: {
 		users() {
 			const users = GlobalUtility.$store.state.adminUsers.users;
