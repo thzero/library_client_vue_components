@@ -1,7 +1,7 @@
 <script>
 import GlobalUtility from '@thzero/library_client/utility/global';
 
-import baseList from '../baseListing';
+import baseListing from '../baseListing';
 
 import VMarkdown from '@/library_vue_vuetify/components/markup/VMarkdown';
 
@@ -10,7 +10,7 @@ export default {
 	components: {
 		VMarkdown
 	},
-	extends: baseList,
+	extends: baseListing,
 	computed: {
 		news() {
 			const news = GlobalUtility.$store.state.adminNews.news;
