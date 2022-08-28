@@ -27,8 +27,7 @@ export default {
 		}
 	},
 	setup(props) {
-		return Object.assign(base.setup(props), {
-		});
+		return {};
 	},
 	data: () => ({
 		dialogSignal: false,

@@ -27,9 +27,9 @@ export default {
 			return !String.isNullOrEmpty(props.message) ? props.message : GlobalUtility.$trans.t('messages.loading');
 		});
 
-		return Object.assign(base.setup(props), {
+		return {
 			displayMessage
-		});
+		};
 	}
 };
 </script>
