@@ -1,6 +1,5 @@
 <script>
-import GlobalUtility from '@/thzero/library_client/utility/global';
-import VueUtility from '../../utility/index';
+import GlobalUtility from '@thzero/library_client/utility/global';
 
 import baseEdit from '../baseEdit';
 
@@ -79,6 +78,10 @@ export default {
 			default: '600px'
 		}
 	},
+	setup (props) {
+		return Object.assign(baseEdit.setup(props), {
+		});
+	},
 	data: () => ({
 		dialogHeightI: 300,
 		dialogDeleteConfirmSignal: new DialogSupport(),
@@ -87,7 +90,7 @@ export default {
 	}),
 	computed: {
 		fullscreenInternal() {
-			return VueUtility.fullscreen(this.$vuetify);
+			return this.notImplementedError();
 		},
 		scrollableI() {
 			return this.scrollable ? 'scrollable' : '';
@@ -166,11 +169,12 @@ export default {
 				if (el && el.length > 0)
 					el[0].scrollTop = 0;
 			}, 25);
-			await this.resetDialog(correlationId, value);
+			await this.resetDialogI(correlationId, value);
 		},
-		// eslint-disable-next-line
-		// async resetDialog(correlationId, value) {
-		// },
+		async resetDialogI(correlationId, value) {
+			if (this.resetDialog)
+				this.resetDialog(correlationId, value);
+		},
 		setErrors(errors) {
 			// this.$refs.obs.setErrors(errors);
 		},
